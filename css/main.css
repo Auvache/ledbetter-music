@@ -5,7 +5,6 @@ html {
 
 body {
     color: #313639;
-    /* color: #fbfbf8; */
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
@@ -23,12 +22,26 @@ p {
 h1 {
     font-size: 80px;
     margin: 0;
+    line-height: 80px;
+    border-bottom: 1px solid black;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 400;
+    padding: 12px;
+    color: #313639;
+    margin: 0 0 8px;
 }
 
 section {
     background-color: #ffffff;
     min-height: 100vh;
+}
 
+.strong {
+    font-weight: bold;
+    margin-top: 0;
 }
 
 /* Header styles */
@@ -73,6 +86,7 @@ section {
     padding: 8px 12px;
     border-radius: 4px;
     box-sizing: border-box;
+    transition: all 1s;
 }
 
 .active {
@@ -92,6 +106,12 @@ section {
     position: relative;
 }
 
+.subheader {
+    font-size: 24px;
+    margin-top: 8px;
+    /* font-weight: 600; */
+}
+
 .hero-img {
     background: url(/img/hero-img-2.jpg);
     background-repeat: no-repeat;
@@ -108,7 +128,7 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.2);
     z-index: 2;
 }
 
@@ -119,6 +139,8 @@ section {
     position: absolute;
     top: 120px;
     z-index: 3;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
 }
 
 .arrow {
@@ -127,11 +149,16 @@ section {
     z-index: 3;
     position: absolute;
     width: 100%;
-    text-align: center;
+    text-align: center;    
 }
 
 .arrow img {
     width: 100px;
+    transition: width 1s;
+}
+
+.arrow img:hover {
+    width: 120px;
 }
 
 /* grid */
@@ -168,6 +195,8 @@ section {
 
 .content-grid>div.head {
     font-size: 40px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #313639;
 }
 
 .content-grid>div.left,
@@ -175,12 +204,68 @@ section {
     font-size: 18px;
 }
 
+/* about */
+
+.mid {
+    grid-area: mid;
+}
+.bio-grid {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        'head head head head head head'
+        'left left mid mid right right'
+        'left left mid mid right right'
+        'left left mid mid right right';
+    grid-gap: 10px;
+    padding: 80px 10px 10px;
+}
+
+.bio-grid>div {
+    background-color: #f9f9f9;
+    padding: 12px;
+}
+
+.bio-grid>div.head {
+    font-size: 40px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #313639;
+}
+.bio-grid>div.left,
+.bio-grid>div.right {
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 30px;
+}
+.bio-grid>div.mid {
+    background-color: #ffffff;
+    padding: 0;
+}
+.bio-grid img {
+    width: 350px;
+    border-radius: 8px;
+}
+/* pricing */
+.pricing-table {
+    width: 90%;
+    margin: 0 auto;
+}
+.pricing-table tr {
+    padding: 4px 0;
+    border-bottom: 1px solid black;
+}
+.pricing-table tr:nth-child(odd) {
+    background: #FFF
+}
+
+
 /* current students */
 .calendar {
     padding-top: 80px;
     width: 1200px;
     margin: 0 auto;
-
 }
 
 /* footer */

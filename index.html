@@ -6,25 +6,23 @@
     <meta name="description" content="Music lesson website">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 
-<body onload="init()">
-
+<body>
     <div class="nav">
         <ul id="nav" class="nav-link-list">
-            <li class="btn"><a href="#about">About Us</a></li>
-            <li class="btn"><a href="#pricing">Pricing</a></li>
-            <li class="btn"><a href="#current-students">Current Students</a></li>
-            <li class="btn"><a href="#learning-links">Learning Links</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#current-students">Current Students</a></li>
+            <li><a href="#learning-links">Learning Links</a></li>
         </ul>
     </div>
 
     <section class="hero">
         <div class="jumbo">
             <h1>Ledbetter<br> Music Studio</h1>
-            <p>we sell children for drug money</p>
+            <p class="subheader">Private Lessons for Flute and Clarinet</p>
         </div>
         <div class="hero-img"></div>
         <div class="hero-overlay"></div>
@@ -32,27 +30,90 @@
     </section>
 
     <section id="about">
-        <div class="content-grid">
+        <div class="bio-grid">
             <div class="head">About Maddi and Jared</div>
-            <div class="left">content</div>
-            <div class="right">content</div>
+            <div class="left">
+                <p class="strong">Jared Ledbetter</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illo laborum vero dicta, perferendis sit architecto unde quaerat excepturi sed nemo voluptatum nostrum officiis quod quasi. Repellat modi dignissimos maxime?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illo laborum vero dicta, perferendis sit architecto unde quaerat excepturi sed nemo voluptatum nostrum officiis quod quasi. Repellat modi dignissimos maxime?</p>
+            </div>
+            <div class="mid">
+                <img alt="jared and maddi" src="/img/bio-pic.jpg"/>
+            </div>
+            <div class="right">
+                <p class="strong">Maddi Ledbetter</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illo laborum vero dicta, perferendis sit architecto unde quaerat excepturi sed nemo voluptatum nostrum officiis quod quasi. Repellat modi dignissimos maxime?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illo laborum vero dicta, perferendis sit architecto unde quaerat excepturi sed nemo voluptatum nostrum officiis quod quasi. Repellat modi dignissimos maxime?</p>
+            </div>
         </div>
     </section>
 
     <section id="pricing">
         <div class="content-grid">
             <div class="head">Pricing</div>
-            <div class="left">content</div>
-            <div class="right">content</div>
+            <div class="left">
+                <p class="strong">Jared - Clarinet</p>
+                <p>The First Lesson is Free!</p>
+                <p>Price depends on the location and duration of a lesson</p>
+                <table class="pricing-table">
+                    <tr>
+                        <td class="strong">Location</td>
+                        <td class="strong">30 min</td>
+                        <td class="strong">60 min</td>
+                    </tr>
+                    <tr>
+                        <td>You come to us*</td>
+                        <td>$20</td>
+                        <td>$40</td>
+                    </tr>
+                    <tr>
+                        <td>We come to you</td>
+                        <td>$30</td>
+                        <td>$60</td>
+                    </tr>
+                    <tr>
+                        <td>Video chat</td>
+                        <td>$15</td>
+                        <td>$30</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="right">
+                <p class="strong">Maddi - Flute</p>
+                <p>The First Lesson is Free!</p>
+                <p>Price depends on the location and duration of a lesson</p>
+                <table class="pricing-table">
+                    <tr>
+                        <td class="strong">Location</td>
+                        <td class="strong">30 min</td>
+                        <td class="strong">60 min</td>
+                    </tr>
+                    <tr>
+                        <td>You come to us*</td>
+                        <td>$10</td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>We come to you</td>
+                        <td>$15</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <td>Video chat</td>
+                        <td>$10</td>
+                        <td>$20</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </section>
 
     <section id="current-students">
         <div class="calendar">
-            <p>This is the event and lesson schedule for currently enrolled students.</p>
+            <h2 style="border-bottom: 2px solid #313639">Current Schedule for Student Events and Lessons</h2>
             <iframe
                 src="https://calendar.google.com/calendar/b/4/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FDenver&amp;src=cmF2aW5pYTcyMTJAZ21haWwuY29t&amp;src=MmM4ODI0aW01ZGRtaWRucGI2OHVib2JscmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=NDVzNGFnb3F1c2tqYWg4a2N1a21lYm12bHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=N3Y2MDU3OGo4MWI1a3JzdDU5cXFhZG9pdGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=M2ZyY3MxN2Q2a21yOWU4anJ1NTgycGNkMXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%234285F4&amp;color=%23F4511E&amp;color=%23D50000&amp;color=%238E24AA&amp;color=%23009688&amp;showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0"
-                style="border-width:0" width="1200" height="500" frameborder="0" scrolling="no"></iframe>
+                style="border-width:0; margin-top: 20px;" width="1200" height="500" frameborder="0" scrolling="no"></iframe>
         </div>
 
     </section>
